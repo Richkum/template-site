@@ -1,6 +1,7 @@
 import React from "react";
 // import image from "rc/assets/Images/Phone.png";
 import image from "../../Images/Phone.png";
+import { Link } from "react-router-dom";
 
 export function Navbar() {
   return (
@@ -37,8 +38,12 @@ export function Navbar() {
                 alt=""
               />
               <div className="routes">
-                <p className="p">Home</p>
-                <p className="p">About</p>
+                <Link to={"/"}>
+                  <p className="p">Home</p>
+                </Link>
+                <Link to={"/about"}>
+                  <p className="p">About</p>
+                </Link>
                 <p className="p">Tour package</p>
                 <p className="p">Gallery</p>
                 <p className="p">Blog</p>
