@@ -2,6 +2,8 @@ import React from "react";
 import { Navbar, Choose, DisplayImages } from "../reuasable/Reuse";
 import Destination from "../destinations/Destination";
 import Travel from "../travel/Travel";
+import ClientsSay from "../clients/ClientsSay";
+import Footer from "../footer/Footer";
 
 function Home() {
   return (
@@ -30,6 +32,8 @@ function Home() {
       <DisplayImages />
       <Destination />
       <Travel />
+      <ClientsSay />
+      <Footer />
     </>
   );
 }

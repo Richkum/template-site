@@ -96,7 +96,7 @@ body {
 
 .home-bgr {
   height: 100vh;
-  background-image: url("../src/assets/Images/cheetah-cub.jpg");
+  background-image: url("https://images.unsplash.com/photo-1611773951410-3099ecbfd5ea?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center;
   color: white;
@@ -284,6 +284,215 @@ body {
   }
 }
 
+.boxes {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 3.5rem;
+
+  .boxx {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background: #304f47;
+    color: #fff;
+    border-radius: 4rem;
+    padding-top: 1.5rem;
+    height: 10rem;
+
+    .p {
+      text-align: center;
+      font-family: "Lora", serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      text-align: center;
+    }
+  }
+}
+
+.comments {
+  width: 93%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 3.5rem;
+
+  .com-cards {
+    border: 1px solid #0000001a;
+    padding: 1.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .com-img {
+      width: 12rem;
+      padding: 0.5rem;
+      border-radius: 100%;
+      border: 0.5rem solid #304f47;
+
+      .comm-img {
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+    .h6 {
+      font-family: "Lora", serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19px;
+      letter-spacing: 0.005em;
+      text-align: center;
+    }
+    .p {
+      font-family: "Mulish", serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.005em;
+      text-align: center;
+      margin-top: -1.8rem;
+    }
+  }
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2.5rem 0 5rem;
+
+  .p {
+    width: 5rem;
+    color: #c7923e;
+    background: #c7923e;
+  }
+
+  .pp {
+    width: 5rem;
+    color: #304f47;
+    background: #304f47;
+  }
+}
+
+.foot {
+  background: #304f47;
+  color: #fff;
+  padding: 2.5rem 0;
+
+  .footter {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 3rem;
+
+    .foot1 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .h3 {
+        font-family: "Lora", serif;
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0.005em;
+        text-align: left;
+      }
+
+      .p {
+        font-family: "Mulish", serif;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.005em;
+        text-align: left;
+      }
+
+      .h6 {
+        font-family: "Mulish", serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: 0.005em;
+        text-align: left;
+      }
+
+      .inp-send {
+        display: flex;
+        gap: 1rem;
+
+        .inp {
+          width: 18rem;
+          padding: 0.8rem 0.5rem;
+          border-radius: 0.5rem;
+          border: none;
+          outline: none;
+        }
+
+        .send {
+          width: 3rem;
+          padding: 0.5rem;
+          background: #c7923e;
+          color: #fff;
+          border: 1px solid #c7923e;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    .foot2 {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .africa-div {
+        /* width: 70%; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .social-icons {
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+
+      .p {
+        font-family: "Mulish", serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+        text-align: left;
+      }
+
+      .paths {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        .p {
+          font-family: "Mulish", serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0.005em;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .main-pop {
     padding-left: 7rem;
@@ -298,7 +507,7 @@ body {
     }
   }
 }
-
+/* 
 @media screen and (max-width: 1024px) {
   .main-pop {
     padding-left: 4rem;
@@ -309,6 +518,61 @@ body {
         height: 15rem;
         border: 0.5rem solid #304f47;
         border-radius: 4rem;
+      }
+    }
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  .boxes {
+    gap: 0.6rem;
+    .boxx {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.1rem;
+      background: #304f47;
+      color: #fff;
+      border-radius: 2rem;
+      padding-top: 1.5rem;
+      height: 6rem;
+
+      .p {
+        text-align: center;
+        font-family: "Lora", serif;
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  .comments {
+    gap: 2.5rem;
+
+    .com-cards {
+      border: 1px solid #0000001a;
+      padding: 1.5rem 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .com-img {
+        border: 0.4rem solid #304f47;
+
+        width: 8rem;
+        /* .comm-img {
+          width: 100%;
+          border-radius: 100%;
+        } */
+      }
+      .h6 {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .p {
+        font-size: 13px;
+        font-weight: 300;
       }
     }
   }
@@ -396,6 +660,74 @@ body {
       }
     }
   }
+
+  .boxes {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .comments {
+    width: 93%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 3.5rem;
+
+    .com-cards {
+      border: 1px solid #0000001a;
+      padding: 1.5rem 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .com-img {
+        width: 12rem;
+        padding: 0.5rem;
+        border-radius: 100%;
+        border: 0.5rem solid #304f47;
+
+        .comm-img {
+          width: 100%;
+          border-radius: 100%;
+        }
+      }
+      .h6 {
+        font-family: "Lora", serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 0.005em;
+        text-align: center;
+      }
+      .p {
+        font-family: "Mulish", serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+        text-align: center;
+        margin-top: -1.8rem;
+      }
+    }
+  }
+
+  .foot {
+    .footter {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+
+      .foot2 {
+        display: none;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -437,6 +769,23 @@ body {
     }
   }
 
+  .home-bgr {
+    .experience {
+      .h1 {
+        font-size: 3rem;
+      }
+      .great-less {
+        padding-top: 6rem;
+        .btn {
+          width: 3rem;
+          height: 3rem;
+          border: 0.3rem solid #fff;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
   .choose-div {
     padding: 1.5rem 0 0.5rem;
     .p {
@@ -471,6 +820,37 @@ body {
           font-size: 13px;
           font-weight: 400;
         }
+      }
+    }
+  }
+  .boxes {
+    width: 96%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+
+    .boxx {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.8rem;
+      background: #304f47;
+      color: #fff;
+      border-radius: 2rem;
+      padding-top: 1.5rem;
+      height: 5rem;
+
+      .box-img {
+        width: 2rem;
+      }
+
+      .p {
+        text-align: center;
+        font-family: "Lora", serif;
+        font-size: 10px;
+        font-weight: 400;
       }
     }
   }
