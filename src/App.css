@@ -256,6 +256,31 @@ body {
       border: 0.5rem solid #304f47;
       border-radius: 4rem;
     }
+
+    .pop-des {
+      padding: 0.1rem;
+
+      .h5 {
+        font-family: "Lora", serif;
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 47px;
+        letter-spacing: 0.005em;
+        text-align: left;
+        color: #000000;
+      }
+
+      .p {
+        font-family: "Mulish", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.005em;
+        margin-top: -2rem;
+        text-align: left;
+        color: #9a9ab0;
+      }
+    }
   }
 }
 
@@ -422,6 +447,31 @@ body {
     .h1 {
       font-size: 1.5rem;
       font-weight: 600;
+    }
+  }
+  .main-pop {
+    .pop-card {
+      .pop-img {
+        width: 11rem;
+        height: 10rem;
+        border: 0.3rem solid #304f47;
+        border-radius: 4rem;
+      }
+
+      .pop-des {
+        padding: 0.1rem;
+
+        .h5 {
+          font-family: "Lora", serif;
+          font-size: 1.5rem;
+        }
+
+        .p {
+          font-family: "Mulish", sans-serif;
+          font-size: 13px;
+          font-weight: 400;
+        }
+      }
     }
   }
 }

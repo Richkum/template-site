@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Choose, DisplayImages } from "../reuasable/Reuse";
 import Destination from "../destinations/Destination";
+import Travel from "../travel/Travel";
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function Home() {
       <DisplayImages />
       <DisplayImages />
       <Destination />
+      <Travel />
     </>
   );
 }
